@@ -59,15 +59,10 @@ class SmyttenApplication : Application() {
             alertDialog.setCancelable(false)
             alertDialog.setTitle(R.string.app_name)
             alertDialog.setMessage("Hello!")
-            alertDialog.setPositiveButton("OK", DialogInterface.OnClickListener { dialog, which ->
+            alertDialog.setPositiveButton("OK") { dialog, which ->
                 dialog.dismiss()
-            })
+            }
             alertDialog.show()
-            /*alertDialog.window?.setLayout(
-                WindowManager.LayoutParams.WRAP_CONTENT,
-                WindowManager.LayoutParams.WRAP_CONTENT
-            )*/
-
         }
     }
 }
